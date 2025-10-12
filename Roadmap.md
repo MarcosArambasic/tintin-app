@@ -24,7 +24,7 @@
 | Tarefa | Responsável | Critério de Aceitação | Dependência |
 |--------|--------------|----------------------|--------------|
 | Criar projeto Maven com Spring Boot | Dev Backend | Executa `mvn spring-boot:run` localmente | Infra pronta |
-| Configurar PostgreSQL (local e EC2) | DevOps | Banco acessível via JDBC | EC2 e rede configuradas |
+| Configurar PostgreSQL (RDS) | DevOps | Banco acessível via JDBC | EC2 e rede configuradas |
 | Implementar entidade `Usuário` e repositório JPA | Dev Backend | CRUD via API `/usuarios` testado no Postman | Banco configurado |
 | Criar testes unitários com JUnit + Mockito | Dev Backend | Cobertura ≥70% | Projeto compila |
 | Configurar Jenkinsfile com build/teste automáticos | DevOps | Jenkins executa pipeline e salva log | Jenkins ativo |

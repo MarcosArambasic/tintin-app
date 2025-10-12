@@ -26,6 +26,16 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('Docker Build') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials-id') {
+                        def app = docker.build("marcosarambasic/tintin-app:latest")
+                        app.push()
+                    }   
+                }
+            }
+        }   
     }
 
     post {
