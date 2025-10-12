@@ -34,3 +34,7 @@ build/
 
 ### Arquivos de ambiente ###
 .env
+
+### Arquivos que usa para guardar senhas e que não precisam subir no git###
+Auxiliador.md
+Roadmap.md
